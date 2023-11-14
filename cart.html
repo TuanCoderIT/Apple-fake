@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/cart.css">
+</head>
+
+<body>
+    <!-- Header Navbar by Bootstrap -->
+    <nav class="header__nav navbar navbar-expand-lg fixed-top px-4 py-1" id="globalnav">
+        <div class="container">
+            <!-- Logo Apple -->
+            <a class="header__logo navbar-brand fs-1 text-dark" href="#"><i class="fa-brands fa-apple"></i></a>
+            <!-- Search & Cart btn-->
+            <div class="header__more fs-4">
+                <a type="button" class="search-btn text-dark mx-3" data-bs-toggle="modal"
+                    data-bs-target="#searchModal"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="https://shopdunk.com/cart" class="cart-btn text-dark mx-3"><i
+                        class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <!-- Toggle Button for Responsive Navbar -->
+            <button class="navbar-toggler fs-2 text-dark" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="header__main collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-dark mx-4" href="">Trang Chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 text-dark mx-4" aria-current="page" href="#">Tất cả sản
+                            phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-dark mx-4" href="">iPhone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-dark mx-4" href="./contact.html">iPad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-dark mx-4" href="#">Mac</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-dark mx-4" href="#">Watch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-dark mx-4" href="#">Phụ kiện</a>
+                    </li>
+                </ul>
+                <!-- Button Log in/Sign up modal -->
+                <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 fs-5" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop-sign-up">Sign up</a>
+                <a type="button" class="auth-form-btn text-dark text-decoration-none ms-4 me-3 fs-5"
+                    data-bs-toggle="modal" data-bs-target="#staticBackdrop">Log in</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="cart-title">
+            <h1>Giỏ hàng đang trống!</h1>
+        </div>
+    </div>
+    <!-- Begin Footer Bootstrap container -->
+    <div class="container mt-5">
+        <footer class="text-center text-lg-start text-dark">
+            <div class="container pb-0">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                            <h5 class="mb-3 fs-3 fw-bold"><i class="fa-brands fa-apple"></i> APPLE fake Inc.</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Giới thiệu</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Liên hệ</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Trợ giúp</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">FAQs</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                            <h5 class="mb-3 fs-3 fw-bold text-uppercase">sản phẩm</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Tất cả sản phẩm</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">iPhone</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">iPad</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Mac</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Watch</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                            <h5 class="mb-3 fs-3 fw-bold text-uppercase">phụ kiện</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">AirPods</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Apple Pencil</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Apple TV</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Sạc USB-C</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Màn hình</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+                            <h5 class="mb-3 fs-3 fw-bold text-uppercase">chính sách</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Quyền riêng tư</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Bảo mật</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Pháp lý</a></li>
+                                <li><a href="#!" class="text-dark text-decoration-none fs-4 lh-lg">Bản quyền</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <hr class="mb-2 mt-5" />
+            </div>
+            <!-- Copyright -->
+            <div class="text-center fs-5 p-4">
+                © 2023 Copyright:
+                <a class="text-secondary" href="https://www.apple.com/vn/">Apple.com/vn</a>
+            </div>
+        </footer>
+    </div>
+    <!-- End of footer Bootstrap -->
+</body>
+
+</html>
