@@ -55,11 +55,6 @@ body {
     background: rgba(251, 251, 253, .8);
 }
 
-/* .navbar a:hover {
-    transform: scale(1.1);
-    transition: transform .4s;
-} */
-
 .header__more i:hover,
 .auth-form-btn:hover {
     opacity: .7;
@@ -118,8 +113,6 @@ body {
 
 .modal-header {
     border-bottom: none;
-    /* margin-right: -30px;
-    margin-top: -40px; */
 }
 
 .modal-footer {
@@ -128,10 +121,9 @@ body {
 
 /* iPhone */
 .iphone__left {
-    background-color: #000;
-    height: 560px;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+    min-height: 580px;
 }
 
 .iphone__left .intro {
@@ -139,32 +131,30 @@ body {
 }
 
 .iphone__left img {
-    width: 60%;
+    width: 59%;
     display: block;
     margin: 0 auto;
     border-radius: var(--border-radius);
     transition: transform .9s;
 }
 
-.iphone__left:hover img {
-    transform: scale(1.1);
-}
-
 .iphone__right {
     background-color: #fafafa;
-    height: 560px;
     display: flex;
     align-items: center;
+    padding: 27px 0;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
+    min-height: 580px;
 }
 
 .iphone__right img {
-    width: 56%;
+    width: 44%;
     border-radius: var(--border-radius);
     transition: transform .9s;
 }
 
+.iphone__left:hover img,
 .iphone__right:hover img {
     transform: scale(1.08);
 }
@@ -176,33 +166,19 @@ body {
 }
 
 .box__iphone {
-    height: 400px;
     background-color: #fff;
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
     transition: transform .6s;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .box__iphone:hover {
     transform: scale(1.08);
-}
-
-.box__iphone-img1 {
-    width: 36%;
-    display: block;
-    margin: 20px auto;
-}
-
-.box__iphone-img2 {
-    width: 60%;
-    display: block;
-    margin: auto;
-}
-
-.box__iphone-img3 {
-    width: 60%;
-    display: block;
-    margin: auto;
 }
 
 .big-wrap-box {
